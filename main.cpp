@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <iostream>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
@@ -49,6 +50,7 @@ rgb getColor(Display *dis, Window win) {
 }
 
 int main(int argc, char *argv[]) {
+
   Display *display = XOpenDisplay(NULL);
   Window root_win = RootWindow(display, DefaultScreen(display)); 
   Cursor cursor;
