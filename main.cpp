@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/cursorfont.h>
@@ -48,12 +50,10 @@ rgb getColor(Display *dis, Window win) {
 
 int main(int argc, char *argv[]) {
   Display *display = XOpenDisplay(NULL);
-  Window root_win = RootWindow(display, DefaultScreen(display));
-  
+  Window root_win = RootWindow(display, DefaultScreen(display)); 
   Cursor cursor;
-  
   cursor = XCreateFontCursor(display, XC_target);
-  
+
   unsigned long e_mask = ButtonPressMask;
   
   int state;
@@ -66,8 +66,8 @@ int main(int argc, char *argv[]) {
   XNextEvent(display, &event);
 
   rgb rgb = getColor(display, root_win);
-
+    
   printf("#%02x%02x%02x\n", rgb.red, rgb.green, rgb.blue);
-
+  
   return 0;
 }
