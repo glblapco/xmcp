@@ -1,7 +1,8 @@
+/*gcc -o xmcp xmcp.c -L/usr/X11/lib -lX11*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <iostream>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/cursorfont.h>
