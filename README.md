@@ -1,10 +1,6 @@
-<h1 align="center">xmcp - X Minimal Color Picker.</h1>
-<p align="center">
-  <img src="./preview.gif" alt="Preview"/>
-</p>
-<p align="center">
-  Universal Color Picker.
-</p>
+# XMCP
+
+X Minimal Color Picker.
 
 ## Dependecies
 
@@ -19,7 +15,7 @@ To directly copy the color output to the clipboard, you can use `xmcp | xsel -b`
 
 ## License
 
-Copyright (C) 2020  Gabriel Polastrini
+Copyright (C) 2020 Biel Polastrini
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3, as published
 by the Free Software Foundation.
